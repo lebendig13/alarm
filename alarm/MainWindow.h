@@ -24,12 +24,8 @@ private slots:
 
     void process(alarm);
 
-private:
-
-
+private:    
     void initTable();
-
-
 
 private:
     addAlarm* addNewAl;
