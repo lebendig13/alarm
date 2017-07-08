@@ -17,13 +17,13 @@ include(../alarm/qtxlsx/src/xlsx/qtxlsx.pri)
 
 
 SOURCES += main.cpp\
-        MainWindow.cpp \
-    addAlarm.cpp
+           MainWindow.cpp \
+           addAlarm.cpp
 
 HEADERS  += MainWindow.h \
-    addAlarm.h
+            addAlarm.h
 
 FORMS    += MainWindow.ui \
-    addAlarm.ui
+            addAlarm.ui
 
 
