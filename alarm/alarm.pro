@@ -11,6 +11,10 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = alarm
 TEMPLATE = app
 
+CONFIG += c++11
+
+include(../alarm/qtxlsx/src/xlsx/qtxlsx.pri)
+
 
 SOURCES += main.cpp\
         MainWindow.cpp \
@@ -21,3 +25,5 @@ HEADERS  += MainWindow.h \
 
 FORMS    += MainWindow.ui \
     addAlarm.ui
+
+

@@ -14,8 +14,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->pB_allOff, SIGNAL(clicked()), this, SLOT(allTurnOff()));
     QObject::connect(ui->pB_turnOn, SIGNAL(clicked()), this, SLOT(turnOn()));
 
-
-
     initTable();
 }
 

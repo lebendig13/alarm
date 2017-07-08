@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>528</width>
-    <height>347</height>
+    <height>430</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,12 +15,15 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="1">
-     <widget class="QPushButton" name="pB_addAlarm">
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pB_turnOn">
       <property name="text">
-       <string>Добавить будильник</string>
+       <string>Включить будильник</string>
       </property>
      </widget>
+    </item>
+    <item row="1" column="1" rowspan="2" colspan="2">
+     <widget class="QTableWidget" name="tW_alarms"/>
     </item>
     <item row="0" column="2">
      <widget class="QPushButton" name="pB_allOff">
@@ -29,15 +32,12 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QTimeEdit" name="tE_clock">
-      <property name="displayFormat">
-       <string>HH:mm:ss</string>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pB_addAlarm">
+      <property name="text">
+       <string>Добавить будильник</string>
       </property>
      </widget>
-    </item>
-    <item row="1" column="1" rowspan="2" colspan="2">
-     <widget class="QTableWidget" name="tW_alarms"/>
     </item>
     <item row="2" column="0">
      <layout class="QGridLayout" name="gridLayout">
@@ -53,10 +53,10 @@
       </item>
      </layout>
     </item>
-    <item row="3" column="1">
-     <widget class="QPushButton" name="pB_turnOn">
-      <property name="text">
-       <string>Включить будильник</string>
+    <item row="1" column="0">
+     <widget class="QTimeEdit" name="tE_clock">
+      <property name="displayFormat">
+       <string>HH:mm:ss</string>
       </property>
      </widget>
     </item>
