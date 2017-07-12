@@ -13,9 +13,6 @@ TEMPLATE = app
 
 CONFIG += c++11
 
-include(../alarm/qtxlsx/src/xlsx/qtxlsx.pri)
-
-
 SOURCES += main.cpp\
            MainWindow.cpp \
            addAlarm.cpp
