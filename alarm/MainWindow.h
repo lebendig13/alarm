@@ -21,6 +21,7 @@ private slots:
     void addAlarmClock();
     void allTurnOff();
     void turnOn();
+    void editAlarm();
 
     void process(alarm);
 
