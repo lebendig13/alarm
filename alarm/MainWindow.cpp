@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->pB_addAlarm, SIGNAL(clicked()), this, SLOT(addAlarmClock()));
     QObject::connect(ui->pB_allOff, SIGNAL(clicked()), this, SLOT(allTurnOff()));
     QObject::connect(ui->pB_turnOn, SIGNAL(clicked()), this, SLOT(turnOn()));
+    QObject::connect(ui->pB_edit, SIGNAL(clicked()), this, SLOT(editAlarm()));
 
     initTable();
 }
@@ -39,6 +40,12 @@ void MainWindow::allTurnOff()
 void MainWindow::turnOn()
 {
 
+}
+
+void MainWindow::editAlarm()
+{
+    int curRow = ui->tW_alarms->selectedItems().at(0)->row();
+    qDebug() << "curRow =" << curRow;
 }
 
 void MainWindow::process(alarm newAlarm)
