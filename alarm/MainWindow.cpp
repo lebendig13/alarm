@@ -46,13 +46,15 @@ void MainWindow::process(alarm newAlarm)
     qDebug() << "newAlarm";
     qDebug() << newAlarm.name;
 
-    int row = 0;
+    static int row = 0;
 
-    ui->tW_alarms->setItem(row, 0, new QTableWidgetItem("1"));
+    ui->tW_alarms->setItem(row, 0, new QTableWidgetItem(QString::number(row+1)));
     ui->tW_alarms->setItem(row, 1, new QTableWidgetItem(newAlarm.name));
     ui->tW_alarms->setItem(row, 2, new QTableWidgetItem(newAlarm.time.toString()));
     ui->tW_alarms->setItem(row, 3, new QTableWidgetItem(newAlarm.date.toString()));
     ui->tW_alarms->setItem(row, 4, new QTableWidgetItem(""));
+
+    ++row;
 }
 
 void MainWindow::initTable()
