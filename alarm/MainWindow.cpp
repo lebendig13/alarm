@@ -52,6 +52,7 @@ void MainWindow::process(alarm newAlarm)
 {
     qDebug() << "newAlarm";
     qDebug() << newAlarm.name;
+    qDebug() << newAlarm.date;
 
     static int row = 0;
 
